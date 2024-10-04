@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.6 rem;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+.main-conntent {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  min-width: 118px;
+  text-align: center;
+  font-size: 1.6 rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+  padding: 0 16px;
+  line-height: 50px;
+}
+/* Header */
+.header {
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6 rem;
+  text-align: center;
+  color: #5f5b53;
+}
+
+.nav a:hover,
+.nav li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  bottom: 6px;
+  left: 21px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+}
+.header .sign-up-btn {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+/* hero */
+.hero {
+  padding-top: 56px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-summary {
+  position: absolute;
+  left: 30%;
+  bottom: 48px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  width: 270px;
+  padding: 28px 24px;
+}
+
+.hero-summary .item {
+    display: flex;
+     
+}
+.hero-summary .item + .item{
+    margin-top: 21px;
+}
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff9e8;
+}
+
+.hero-summary .info {
+    margin-left: 20px;
+}
+
+.hero-summary .item:nth-of-type(2) .icon{
+    background: #FCEFFF;
+}
+
+.hero-summary .item:nth-of-type(3) .icon{
+    background: #EBEAFF;
+}
+.hero-summary .label{
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.hero-summary .title{
+    color: #171100;
+    font-size: 1.4rem;
+    line-height: 1.67;
+    font-weight: 600;
+}
+
